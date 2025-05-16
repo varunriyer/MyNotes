@@ -21,7 +21,7 @@ app.use(express.json());
 
 //Load Swagger JSON file 
 const swaggerFile = JSON.parse(
-    await readFile(new URL('./swagger.json', import.meta.URL))
+    await readFile(new URL('./swagger.json', import.meta.url))
 );
 
 // Swagger Documentation
